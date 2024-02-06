@@ -487,7 +487,8 @@
             <!-- Heading element -->
 
             <button class="btn btn-warning btn-sm" onclick="openPdfPPT()" >About FTP</button>
-            &ensp;&ensp;<button class="btn btn-primary btn-sm" onclick="openPdfDocs()" >How To Use FTP</button>
+            &ensp;&ensp;<button class="btn btn-primary btn-sm" onclick="openPdfDocs()" >How To Use FTP Document</button>
+            &ensp;&ensp;<button class="btn btn-danger btn-sm" onclick="openVideo()" >How To Use FTP Video</button>
 
 
 
@@ -1421,6 +1422,11 @@
     
     function openPdfDocs(){
         window.open('openPdfDocs.html', '_blank');
+    }
+
+    function openVideo(){
+      var link = 'https://youtu.be/CTe2tLgTm-k';
+            window.open(link, '_blank'); // '_blank' opens the link in a new tab
     }
         
 
