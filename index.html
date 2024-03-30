@@ -753,7 +753,7 @@
             </div>
 
 
-            <div class="vertical-line-browser" style="z-index: 0;"></div>
+            <div class="vertical-line-browser" style="z-index: 0;" ></div>
 
 
             <!-- Browser Image Input -->
@@ -770,12 +770,31 @@
             <!-- Anchor element for file download link with styling and click event handler -->
 
             <!-- Connector Divs -->
-            <div class="connector" style="margin-top: 190px;"></div>
-            <div class="connector-1" style="margin-top: 190px;"></div>
+            <div class="connector" style="margin-top: 190px;" data-bs-toggle="modal" data-bs-target="#Connector"></div>
+            <div class="connector-1" style="margin-top: 190px;" data-bs-toggle="modal" data-bs-target="#Connector"></div>
             <!-- Div elements for connectors with styling -->
 
 
-
+            <div class="modal fade" id="Connector" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #000000;">Fast Ethernet 0/1 RS-232 Wire</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+          
+                      <img src="rs232.jpg" alt="RS 232">
+                      <img src="pinrs232.jpg" alt="Pin number of RS-232">
+          
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Okay</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 
 
@@ -1143,7 +1162,7 @@
 
 
             <!-- Slanted line container -->
-            <div class="slanted-line-container"></div>
+            <div class="slanted-line-container" data-bs-toggle="modal" data-bs-target="#Connector"></div>
             <div class="vertical-line"></div>
             <div class="model-viewer-container" style="margin-left:69% ;margin-top: -10%;">
                 <model-viewer src="laptop (3).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
